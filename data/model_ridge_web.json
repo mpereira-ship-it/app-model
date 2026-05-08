@@ -1,0 +1,2699 @@
+{
+  "metadata": {
+    "modelo": "Regresion logistica ridge",
+    "familia": "binomial",
+    "penalizacion": "ridge",
+    "alpha_glmnet": "0",
+    "lambda_min": "0.00479803227032551",
+    "n_muestra_analitica": "22485",
+    "prevalencia_global": "0.170558149877696",
+    "score_method": "z_cohorte",
+    "ns_df": "3",
+    "top_frac": "0.1",
+    "cohortes_disponibles": "2014,2015,2016,2017,2018,2019,2020,2021,2022,2023",
+    "uso_recomendado": "Apoyo academico demostrativo para priorizacion de acompanamiento estudiantil.",
+    "advertencia": "La probabilidad estimada no constituye diagnostico individual ni debe usarse como criterio automatico de clasificacion, exclusion o intervencion."
+  },
+  "coeficientes": {
+    "(Intercept)": -1.4562,
+    "sexodesconocido": 0,
+    "sexohombre": 0.1368,
+    "sexomujer": -0.1366,
+    "sexootros": 0,
+    "edad": 0.008,
+    "adm_nem_notas": 0.0025,
+    "adm_nem_puntaje": -0.0019,
+    "adm_ranking": 0.0012,
+    "adm_lenguaje_norm": 0.0455,
+    "adm_matematica_norm": -0.2819,
+    "adm_psu_promedio_norm": -0.1123,
+    "adm_psu_ponderado_norm": -0.142,
+    "adm_quintil2": -0.247,
+    "adm_quintil3": -0.1559,
+    "adm_quintil4": -0.3093,
+    "adm_quintil5": -0.1247,
+    "adm_quintildesconocido": 0,
+    "adm_quintilotros": 0,
+    "adm_quintils/i": 0.3498,
+    "adm_gratuidad1": -0.5344,
+    "adm_gratuidaddesconocido": 0,
+    "adm_gratuidadotros": 0,
+    "dependencia_educacionaleducacion_publica": -0.0255,
+    "dependencia_educacionalmunicipal": 0.1056,
+    "dependencia_educacionalotros": 0,
+    "dependencia_educacionalparticular_pagado": 0.0903,
+    "dependencia_educacionalparticular_subvencionado": -0.1138,
+    "dependencia_educacionals i": 0.1112,
+    "vive_padres1": -0.2107,
+    "vive_padresdesconocido": 0.0397,
+    "vive_padresNA": -0.1552,
+    "vive_padresotros": 0,
+    "vive_solo1": -0.0088,
+    "vive_solodesconocido": 0.0402,
+    "vive_soloNA": -0.1541,
+    "vive_solootros": 0,
+    "pc_propio1": -0.219,
+    "pc_propiodesconocido": 0.0369,
+    "pc_propiootros": 0,
+    "pc_publico1": -0.2639,
+    "pc_publicodesconocido": 0.037,
+    "pc_publicootros": 0,
+    "acceso_internet1": 0.0282,
+    "acceso_internetdesconocido": 0.0393,
+    "acceso_internetotros": 0,
+    "sede_carreraconcepcion": 0.0589,
+    "sede_carreradesconocido": 0,
+    "sede_carreraotros": 0,
+    "oferta_nombre_carrera_areaarte_arquitectura": 0.4905,
+    "oferta_nombre_carrera_areaciencias": 0.6747,
+    "oferta_nombre_carrera_areaciencias_sociales": -0.0482,
+    "oferta_nombre_carrera_areadesconocido": 0,
+    "oferta_nombre_carrera_areaeducacion": 0.0347,
+    "oferta_nombre_carrera_areaotros": 0,
+    "oferta_nombre_carrera_arearecursos_naturales": 0.7337,
+    "oferta_nombre_carrera_areasalud": -0.1107,
+    "oferta_nombre_carrera_areatecnologia": 0.4211,
+    "splines::ns(cohorte, df = 3)1": 0.0203,
+    "splines::ns(cohorte, df = 3)2": 0.952,
+    "splines::ns(cohorte, df = 3)3": 0.27
+  },
+  "columnas_diseno": ["sexodesconocido", "sexohombre", "sexomujer", "sexootros", "edad", "adm_nem_notas", "adm_nem_puntaje", "adm_ranking", "adm_lenguaje_norm", "adm_matematica_norm", "adm_psu_promedio_norm", "adm_psu_ponderado_norm", "adm_quintil2", "adm_quintil3", "adm_quintil4", "adm_quintil5", "adm_quintildesconocido", "adm_quintilotros", "adm_quintils/i", "adm_gratuidad1", "adm_gratuidaddesconocido", "adm_gratuidadotros", "dependencia_educacionaleducacion_publica", "dependencia_educacionalmunicipal", "dependencia_educacionalotros", "dependencia_educacionalparticular_pagado", "dependencia_educacionalparticular_subvencionado", "dependencia_educacionals i", "vive_padres1", "vive_padresdesconocido", "vive_padresNA", "vive_padresotros", "vive_solo1", "vive_solodesconocido", "vive_soloNA", "vive_solootros", "pc_propio1", "pc_propiodesconocido", "pc_propiootros", "pc_publico1", "pc_publicodesconocido", "pc_publicootros", "acceso_internet1", "acceso_internetdesconocido", "acceso_internetotros", "sede_carreraconcepcion", "sede_carreradesconocido", "sede_carreraotros", "oferta_nombre_carrera_areaarte_arquitectura", "oferta_nombre_carrera_areaciencias", "oferta_nombre_carrera_areaciencias_sociales", "oferta_nombre_carrera_areadesconocido", "oferta_nombre_carrera_areaeducacion", "oferta_nombre_carrera_areaotros", "oferta_nombre_carrera_arearecursos_naturales", "oferta_nombre_carrera_areasalud", "oferta_nombre_carrera_areatecnologia", "splines::ns(cohorte, df = 3)1", "splines::ns(cohorte, df = 3)2", "splines::ns(cohorte, df = 3)3"],
+  "medianas": {
+    "edad": 19,
+    "adm_nem_notas": 6.03,
+    "adm_nem_puntaje": 633,
+    "adm_ranking": 659,
+    "adm_lenguaje_norm": -0.0388,
+    "adm_matematica_norm": 0.0137,
+    "adm_psu_promedio_norm": -0.0699,
+    "adm_psu_ponderado_norm": -0.0017
+  },
+  "score_params_por_cohorte": [
+    {
+      "cohorte": 2014,
+      "variable_raw": "adm_lenguaje",
+      "media": 552.0389,
+      "desviacion_estandar": 63.5051,
+      "n_validos": 2134,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2014,
+      "variable_raw": "adm_matematica",
+      "media": 567.7512,
+      "desviacion_estandar": 58.7889,
+      "n_validos": 2134,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2014,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 597.7344,
+      "desviacion_estandar": 57.8071,
+      "n_validos": 2134,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2014,
+      "variable_raw": "adm_psu_promedio",
+      "media": 559.895,
+      "desviacion_estandar": 48.6583,
+      "n_validos": 2134,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2015,
+      "variable_raw": "adm_lenguaje",
+      "media": 559.9283,
+      "desviacion_estandar": 65.1941,
+      "n_validos": 2244,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2015,
+      "variable_raw": "adm_matematica",
+      "media": 568.3538,
+      "desviacion_estandar": 60.7248,
+      "n_validos": 2244,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2015,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 603.947,
+      "desviacion_estandar": 59.7511,
+      "n_validos": 2244,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2015,
+      "variable_raw": "adm_psu_promedio",
+      "media": 564.141,
+      "desviacion_estandar": 50.6133,
+      "n_validos": 2244,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2016,
+      "variable_raw": "adm_lenguaje",
+      "media": 557.6181,
+      "desviacion_estandar": 65.2325,
+      "n_validos": 2265,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2016,
+      "variable_raw": "adm_matematica",
+      "media": 568.4954,
+      "desviacion_estandar": 61.3229,
+      "n_validos": 2265,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2016,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 603.0169,
+      "desviacion_estandar": 57.8394,
+      "n_validos": 2265,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2016,
+      "variable_raw": "adm_psu_promedio",
+      "media": 563.0567,
+      "desviacion_estandar": 50.8866,
+      "n_validos": 2265,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2017,
+      "variable_raw": "adm_lenguaje",
+      "media": 554.4064,
+      "desviacion_estandar": 67.573,
+      "n_validos": 2355,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2017,
+      "variable_raw": "adm_matematica",
+      "media": 565.6348,
+      "desviacion_estandar": 65.4521,
+      "n_validos": 2355,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2017,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 602.0405,
+      "desviacion_estandar": 57.2834,
+      "n_validos": 2326,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2017,
+      "variable_raw": "adm_psu_promedio",
+      "media": 560.0714,
+      "desviacion_estandar": 53.7968,
+      "n_validos": 2354,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2018,
+      "variable_raw": "adm_lenguaje",
+      "media": 556.6274,
+      "desviacion_estandar": 69.6719,
+      "n_validos": 2410,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2018,
+      "variable_raw": "adm_matematica",
+      "media": 565.6539,
+      "desviacion_estandar": 66.5316,
+      "n_validos": 2410,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2018,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 602.3047,
+      "desviacion_estandar": 57.482,
+      "n_validos": 2329,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2018,
+      "variable_raw": "adm_psu_promedio",
+      "media": 561.1407,
+      "desviacion_estandar": 56.2125,
+      "n_validos": 2410,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2019,
+      "variable_raw": "adm_lenguaje",
+      "media": 553.2044,
+      "desviacion_estandar": 67.8605,
+      "n_validos": 2432,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2019,
+      "variable_raw": "adm_matematica",
+      "media": 559.0201,
+      "desviacion_estandar": 71.3664,
+      "n_validos": 2432,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2019,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 600.1896,
+      "desviacion_estandar": 58.4462,
+      "n_validos": 2382,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2019,
+      "variable_raw": "adm_psu_promedio",
+      "media": 556.1417,
+      "desviacion_estandar": 55.4223,
+      "n_validos": 2432,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2020,
+      "variable_raw": "adm_lenguaje",
+      "media": 550.6999,
+      "desviacion_estandar": 69.6609,
+      "n_validos": 2269,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2020,
+      "variable_raw": "adm_matematica",
+      "media": 557.2578,
+      "desviacion_estandar": 68.5468,
+      "n_validos": 2269,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2020,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 606.4697,
+      "desviacion_estandar": 62.9757,
+      "n_validos": 2212,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2020,
+      "variable_raw": "adm_psu_promedio",
+      "media": 553.9338,
+      "desviacion_estandar": 56.5478,
+      "n_validos": 2275,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2021,
+      "variable_raw": "adm_lenguaje",
+      "media": 532.2082,
+      "desviacion_estandar": 78.2607,
+      "n_validos": 2181,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2021,
+      "variable_raw": "adm_matematica",
+      "media": 542.8643,
+      "desviacion_estandar": 76.1899,
+      "n_validos": 2181,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2021,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 603.2259,
+      "desviacion_estandar": 65.9941,
+      "n_validos": 2133,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2021,
+      "variable_raw": "adm_psu_promedio",
+      "media": 537.6104,
+      "desviacion_estandar": 62.9817,
+      "n_validos": 2183,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2022,
+      "variable_raw": "adm_lenguaje",
+      "media": 531.4376,
+      "desviacion_estandar": 75.8917,
+      "n_validos": 1883,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2022,
+      "variable_raw": "adm_matematica",
+      "media": 542.6936,
+      "desviacion_estandar": 72.2394,
+      "n_validos": 1883,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2022,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 613.551,
+      "desviacion_estandar": 63.7722,
+      "n_validos": 1833,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2022,
+      "variable_raw": "adm_psu_promedio",
+      "media": 536.9475,
+      "desviacion_estandar": 61.4574,
+      "n_validos": 1884,
+      "variable_modelo": "adm_psu_promedio_norm"
+    },
+    {
+      "cohorte": 2023,
+      "variable_raw": "adm_lenguaje",
+      "media": 661.387,
+      "desviacion_estandar": 100.7293,
+      "n_validos": 2204,
+      "variable_modelo": "adm_lenguaje_norm"
+    },
+    {
+      "cohorte": 2023,
+      "variable_raw": "adm_matematica",
+      "media": 572.7013,
+      "desviacion_estandar": 107.8368,
+      "n_validos": 2176,
+      "variable_modelo": "adm_matematica_norm"
+    },
+    {
+      "cohorte": 2023,
+      "variable_raw": "adm_psu_ponderado",
+      "media": 691.0622,
+      "desviacion_estandar": 85.901,
+      "n_validos": 2164,
+      "variable_modelo": "adm_psu_ponderado_norm"
+    },
+    {
+      "cohorte": 2023,
+      "variable_raw": "adm_psu_promedio",
+      "media": 617.2132,
+      "desviacion_estandar": 90.4817,
+      "n_validos": 2202,
+      "variable_modelo": "adm_psu_promedio_norm"
+    }
+  ],
+  "niveles_modelo": [
+    {
+      "variable": "sexo",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "hombre"
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "mujer"
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i"
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado"
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i"
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "NA"
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "NA"
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "0"
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "1"
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "chillan"
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "concepcion"
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud"
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia"
+    }
+  ],
+  "dummy_mapping": [
+    {
+      "variable": "sexo",
+      "nivel_modelo": "desconocido",
+      "columna": "sexodesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "desconocido",
+      "columna": "sexohombre",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "desconocido",
+      "columna": "sexomujer",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "desconocido",
+      "columna": "sexootros",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "hombre",
+      "columna": "sexodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "hombre",
+      "columna": "sexohombre",
+      "valor": 1
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "hombre",
+      "columna": "sexomujer",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "hombre",
+      "columna": "sexootros",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "mujer",
+      "columna": "sexodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "mujer",
+      "columna": "sexohombre",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "mujer",
+      "columna": "sexomujer",
+      "valor": 1
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "mujer",
+      "columna": "sexootros",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "otros",
+      "columna": "sexodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "otros",
+      "columna": "sexohombre",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "otros",
+      "columna": "sexomujer",
+      "valor": 0
+    },
+    {
+      "variable": "sexo",
+      "nivel_modelo": "otros",
+      "columna": "sexootros",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "1",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintil2",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "2",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintil3",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "3",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintil4",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "4",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintil5",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "5",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintildesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintilotros",
+      "valor": 1
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "otros",
+      "columna": "adm_quintils/i",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintil2",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintil3",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintil4",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintil5",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintildesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintilotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_quintil",
+      "nivel_modelo": "s/i",
+      "columna": "adm_quintils/i",
+      "valor": 1
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "0",
+      "columna": "adm_gratuidad1",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "0",
+      "columna": "adm_gratuidaddesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "0",
+      "columna": "adm_gratuidadotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "1",
+      "columna": "adm_gratuidad1",
+      "valor": 1
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "1",
+      "columna": "adm_gratuidaddesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "1",
+      "columna": "adm_gratuidadotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_gratuidad1",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_gratuidaddesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "desconocido",
+      "columna": "adm_gratuidadotros",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "otros",
+      "columna": "adm_gratuidad1",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "otros",
+      "columna": "adm_gratuidaddesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "adm_gratuidad",
+      "nivel_modelo": "otros",
+      "columna": "adm_gratuidadotros",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "desconocido",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "educacion_publica",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "municipal",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionalotros",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "otros",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_pagado",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 1
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "particular_subvencionado",
+      "columna": "dependencia_educacionals i",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionaleducacion_publica",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionalmunicipal",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionalotros",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionalparticular_pagado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionalparticular_subvencionado",
+      "valor": 0
+    },
+    {
+      "variable": "dependencia_educacional",
+      "nivel_modelo": "s i",
+      "columna": "dependencia_educacionals i",
+      "valor": 1
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "0",
+      "columna": "vive_padres1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "0",
+      "columna": "vive_padresdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "0",
+      "columna": "vive_padresNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "0",
+      "columna": "vive_padresotros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "1",
+      "columna": "vive_padres1",
+      "valor": 1
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "1",
+      "columna": "vive_padresdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "1",
+      "columna": "vive_padresNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "1",
+      "columna": "vive_padresotros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_padres1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_padresdesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_padresNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_padresotros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "NA",
+      "columna": "vive_padres1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "NA",
+      "columna": "vive_padresdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "NA",
+      "columna": "vive_padresNA",
+      "valor": 1
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "NA",
+      "columna": "vive_padresotros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "otros",
+      "columna": "vive_padres1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "otros",
+      "columna": "vive_padresdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "otros",
+      "columna": "vive_padresNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_padres",
+      "nivel_modelo": "otros",
+      "columna": "vive_padresotros",
+      "valor": 1
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "0",
+      "columna": "vive_solo1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "0",
+      "columna": "vive_solodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "0",
+      "columna": "vive_soloNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "0",
+      "columna": "vive_solootros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "1",
+      "columna": "vive_solo1",
+      "valor": 1
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "1",
+      "columna": "vive_solodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "1",
+      "columna": "vive_soloNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "1",
+      "columna": "vive_solootros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_solo1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_solodesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_soloNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "desconocido",
+      "columna": "vive_solootros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "NA",
+      "columna": "vive_solo1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "NA",
+      "columna": "vive_solodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "NA",
+      "columna": "vive_soloNA",
+      "valor": 1
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "NA",
+      "columna": "vive_solootros",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "otros",
+      "columna": "vive_solo1",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "otros",
+      "columna": "vive_solodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "otros",
+      "columna": "vive_soloNA",
+      "valor": 0
+    },
+    {
+      "variable": "vive_solo",
+      "nivel_modelo": "otros",
+      "columna": "vive_solootros",
+      "valor": 1
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "0",
+      "columna": "pc_propio1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "0",
+      "columna": "pc_propiodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "0",
+      "columna": "pc_propiootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "1",
+      "columna": "pc_propio1",
+      "valor": 1
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "1",
+      "columna": "pc_propiodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "1",
+      "columna": "pc_propiootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_propio1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_propiodesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_propiootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "otros",
+      "columna": "pc_propio1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "otros",
+      "columna": "pc_propiodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_propio",
+      "nivel_modelo": "otros",
+      "columna": "pc_propiootros",
+      "valor": 1
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "0",
+      "columna": "pc_publico1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "0",
+      "columna": "pc_publicodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "0",
+      "columna": "pc_publicootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "1",
+      "columna": "pc_publico1",
+      "valor": 1
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "1",
+      "columna": "pc_publicodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "1",
+      "columna": "pc_publicootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_publico1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_publicodesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "desconocido",
+      "columna": "pc_publicootros",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "otros",
+      "columna": "pc_publico1",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "otros",
+      "columna": "pc_publicodesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "pc_publico",
+      "nivel_modelo": "otros",
+      "columna": "pc_publicootros",
+      "valor": 1
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "0",
+      "columna": "acceso_internet1",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "0",
+      "columna": "acceso_internetdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "0",
+      "columna": "acceso_internetotros",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "1",
+      "columna": "acceso_internet1",
+      "valor": 1
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "1",
+      "columna": "acceso_internetdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "1",
+      "columna": "acceso_internetotros",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "desconocido",
+      "columna": "acceso_internet1",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "desconocido",
+      "columna": "acceso_internetdesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "desconocido",
+      "columna": "acceso_internetotros",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "otros",
+      "columna": "acceso_internet1",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "otros",
+      "columna": "acceso_internetdesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "acceso_internet",
+      "nivel_modelo": "otros",
+      "columna": "acceso_internetotros",
+      "valor": 1
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "chillan",
+      "columna": "sede_carreraconcepcion",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "chillan",
+      "columna": "sede_carreradesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "chillan",
+      "columna": "sede_carreraotros",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "concepcion",
+      "columna": "sede_carreraconcepcion",
+      "valor": 1
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "concepcion",
+      "columna": "sede_carreradesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "concepcion",
+      "columna": "sede_carreraotros",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "desconocido",
+      "columna": "sede_carreraconcepcion",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "desconocido",
+      "columna": "sede_carreradesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "desconocido",
+      "columna": "sede_carreraotros",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "otros",
+      "columna": "sede_carreraconcepcion",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "otros",
+      "columna": "sede_carreradesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "sede_carrera",
+      "nivel_modelo": "otros",
+      "columna": "sede_carreraotros",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "administracion_comercio",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "arte_arquitectura",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "ciencias_sociales",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "desconocido",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "educacion",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "otros",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "recursos_naturales",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 1
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "salud",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areaarte_arquitectura",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areaciencias",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areaciencias_sociales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areadesconocido",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areaeducacion",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areaotros",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_arearecursos_naturales",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areasalud",
+      "valor": 0
+    },
+    {
+      "variable": "oferta_nombre_carrera_area",
+      "nivel_modelo": "tecnologia",
+      "columna": "oferta_nombre_carrera_areatecnologia",
+      "valor": 1
+    }
+  ],
+  "spline_basis_cohorte": [
+    {
+      "cohorte": 2014,
+      "splines::ns(cohorte, df = 3)1": 0,
+      "splines::ns(cohorte, df = 3)2": 0,
+      "splines::ns(cohorte, df = 3)3": 0
+    },
+    {
+      "cohorte": 2015,
+      "splines::ns(cohorte, df = 3)1": -0.0757,
+      "splines::ns(cohorte, df = 3)2": 0.2455,
+      "splines::ns(cohorte, df = 3)3": -0.1637
+    },
+    {
+      "cohorte": 2016,
+      "splines::ns(cohorte, df = 3)1": -0.0981,
+      "splines::ns(cohorte, df = 3)2": 0.4425,
+      "splines::ns(cohorte, df = 3)3": -0.295
+    },
+    {
+      "cohorte": 2017,
+      "splines::ns(cohorte, df = 3)1": -0.0143,
+      "splines::ns(cohorte, df = 3)2": 0.5428,
+      "splines::ns(cohorte, df = 3)3": -0.3619
+    },
+    {
+      "cohorte": 2018,
+      "splines::ns(cohorte, df = 3)1": 0.1975,
+      "splines::ns(cohorte, df = 3)2": 0.5187,
+      "splines::ns(cohorte, df = 3)3": -0.3396
+    },
+    {
+      "cohorte": 2019,
+      "splines::ns(cohorte, df = 3)1": 0.4321,
+      "splines::ns(cohorte, df = 3)2": 0.4259,
+      "splines::ns(cohorte, df = 3)3": -0.2345
+    },
+    {
+      "cohorte": 2020,
+      "splines::ns(cohorte, df = 3)1": 0.553,
+      "splines::ns(cohorte, df = 3)2": 0.3411,
+      "splines::ns(cohorte, df = 3)3": -0.0607
+    },
+    {
+      "cohorte": 2021,
+      "splines::ns(cohorte, df = 3)1": 0.4601,
+      "splines::ns(cohorte, df = 3)2": 0.3233,
+      "splines::ns(cohorte, df = 3)3": 0.1672
+    },
+    {
+      "cohorte": 2022,
+      "splines::ns(cohorte, df = 3)1": 0.2004,
+      "splines::ns(cohorte, df = 3)2": 0.3618,
+      "splines::ns(cohorte, df = 3)3": 0.4316
+    },
+    {
+      "cohorte": 2023,
+      "splines::ns(cohorte, df = 3)1": -0.1429,
+      "splines::ns(cohorte, df = 3)2": 0.4286,
+      "splines::ns(cohorte, df = 3)3": 0.7143
+    }
+  ],
+  "punto_corte_top10": [
+    {
+      "fuente": "validacion_intercohortes_ridge_sin_recalibracion",
+      "corte_top10": 0.298,
+      "prevalencia": 0.1706,
+      "precision_top10": 0.3335,
+      "cobertura_top10": 0.1956,
+      "rf10": 1.9552
+    },
+    {
+      "fuente": "modelo_final_aparente",
+      "corte_top10": 0.2867,
+      "prevalencia": 0.1706,
+      "precision_top10": 0.3668,
+      "cobertura_top10": 0.2151,
+      "rf10": 2.1508
+    }
+  ],
+  "variable_dictionary": [
+    {
+      "variable_web": "cohorte",
+      "variable_modelo": "cohorte",
+      "tipo": "cohorte",
+      "descripcion": "Cohorte de ingreso del estudiante.",
+      "requerido": true
+    },
+    {
+      "variable_web": "sexo",
+      "variable_modelo": "sexo",
+      "tipo": "categorica",
+      "descripcion": "Sexo registrado institucionalmente.",
+      "requerido": true
+    },
+    {
+      "variable_web": "edad",
+      "variable_modelo": "edad",
+      "tipo": "numerica",
+      "descripcion": "Edad al ingreso.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_nem_notas",
+      "variable_modelo": "adm_nem_notas",
+      "tipo": "numerica",
+      "descripcion": "Promedio de notas de enseñanza media.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_nem_puntaje",
+      "variable_modelo": "adm_nem_puntaje",
+      "tipo": "numerica",
+      "descripcion": "Puntaje NEM.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_ranking",
+      "variable_modelo": "adm_ranking",
+      "tipo": "numerica",
+      "descripcion": "Ranking escolar.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_lenguaje",
+      "variable_modelo": "adm_lenguaje_norm",
+      "tipo": "puntaje_bruto",
+      "descripcion": "Puntaje bruto de lenguaje o competencia lectora.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_matematica",
+      "variable_modelo": "adm_matematica_norm",
+      "tipo": "puntaje_bruto",
+      "descripcion": "Puntaje bruto de matemática.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_psu_promedio",
+      "variable_modelo": "adm_psu_promedio_norm",
+      "tipo": "puntaje_bruto",
+      "descripcion": "Promedio bruto de puntajes de admisión.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_psu_ponderado",
+      "variable_modelo": "adm_psu_ponderado_norm",
+      "tipo": "puntaje_bruto",
+      "descripcion": "Puntaje ponderado bruto de admisión.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_quintil",
+      "variable_modelo": "adm_quintil",
+      "tipo": "categorica",
+      "descripcion": "Quintil socioeconómico registrado.",
+      "requerido": true
+    },
+    {
+      "variable_web": "adm_gratuidad",
+      "variable_modelo": "adm_gratuidad",
+      "tipo": "categorica",
+      "descripcion": "Indicador de gratuidad.",
+      "requerido": true
+    },
+    {
+      "variable_web": "dependencia_educacional",
+      "variable_modelo": "dependencia_educacional",
+      "tipo": "categorica",
+      "descripcion": "Dependencia educacional del establecimiento de origen.",
+      "requerido": true
+    },
+    {
+      "variable_web": "vive_padres",
+      "variable_modelo": "vive_padres",
+      "tipo": "categorica",
+      "descripcion": "Indicador de convivencia con padres.",
+      "requerido": true
+    },
+    {
+      "variable_web": "vive_solo",
+      "variable_modelo": "vive_solo",
+      "tipo": "categorica",
+      "descripcion": "Indicador de residencia individual.",
+      "requerido": true
+    },
+    {
+      "variable_web": "pc_propio",
+      "variable_modelo": "pc_propio",
+      "tipo": "categorica",
+      "descripcion": "Acceso a computador propio.",
+      "requerido": true
+    },
+    {
+      "variable_web": "pc_publico",
+      "variable_modelo": "pc_publico",
+      "tipo": "categorica",
+      "descripcion": "Acceso a computador público.",
+      "requerido": true
+    },
+    {
+      "variable_web": "acceso_internet",
+      "variable_modelo": "acceso_internet",
+      "tipo": "categorica",
+      "descripcion": "Acceso a internet.",
+      "requerido": true
+    },
+    {
+      "variable_web": "sede_carrera",
+      "variable_modelo": "sede_carrera",
+      "tipo": "categorica",
+      "descripcion": "Sede de la carrera.",
+      "requerido": true
+    },
+    {
+      "variable_web": "oferta_nombre_carrera_area",
+      "variable_modelo": "oferta_nombre_carrera_area",
+      "tipo": "categorica",
+      "descripcion": "Área o carrera de ingreso.",
+      "requerido": true
+    }
+  ]
+}
