@@ -27,7 +27,7 @@ export default function Home() {
           <span className="eyebrow">Aplicación académica demostrativa</span>
           <h1>Predicción de deserción temprana universitaria</h1>
           <p>
-            Prototipo web basado en un modelo de regresión logística ridge entrenado con cohortes de ingreso 2014–2023. La herramienta estima una probabilidad orientativa de deserción antes del inicio del segundo año académico.
+            Prototipo web basado en un modelo de regresión logística ridge entrenado con cohortes de ingreso 2014–2023. La herramienta estima una probabilidad orientativa de deserción antes del inicio del segundo año académico. Patricia Letelier Sanz - Flavio Valassina Simonetta - Manuel Pereira Barahona
           </p>
         </div>
         <div className="heroCard">
